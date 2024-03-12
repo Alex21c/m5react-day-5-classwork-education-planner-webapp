@@ -12,7 +12,7 @@ export default function OutputLines({keyAndData, updateStateDbSubjects, stateDbS
   
   return (
     <div className="outputLine flex gap-[1rem] items-center border-b-[1px] border-yellow-100 pb-[2rem] ">
-      <h2 className=" text-[1.8rem]">{data.subject}- {data.hours} hours</h2>
+      <h2 className=" text-[1.8rem]">{data.subject} &mdash; {data.hours} hours</h2>
       <div className="flex gap-[1rem]">
 
         <button data-key={key} className="font-semibold  outline outline-2 outline-amber-50 bg-green-500 hover:bg-green-300 transition cursor-pointer pt-[.5rem] rounded-full pb-[.5rem] p-[1rem]  hover:text-slate-900 text-slate-50 text-[1.5rem]" onClick={

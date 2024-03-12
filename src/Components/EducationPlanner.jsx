@@ -102,6 +102,8 @@ let addSubjectAndHours = ()=>{
   updateStateDbSubjects((previousState)=>{
 
     let key = generateUniqueId();
+    updateStateSubjectName('');
+    updateStateSubjectHours('');
     // console.log('key is' , key);
     return {
       ...previousState,
@@ -110,6 +112,9 @@ let addSubjectAndHours = ()=>{
         hours: stateSubjectHours
       }      
    };
+
+   // clear
+   
   });
     
   //   {
@@ -132,12 +137,12 @@ let addSubjectAndHours = ()=>{
       <header className="flex flex-col items-center gap-[1rem]">
         <h1 className="smallCaps text-center font-semibold text-[3rem]  text-slate-50">Education Planner Web-App</h1>
         <form className="flex flex-col gap-[1rem]  w-[100%]">
-          <input required className="text-slate-900 transition focus:outline focus:outline-2 focus:outline-yellow-500 p-[.5rem]   rounded-md" type="text" placeholder="Subject" onChange={
+          <input required value={stateSubjectName} className="text-slate-900 transition focus:outline focus:outline-2 focus:outline-yellow-500 p-[.5rem]   rounded-md" type="text" placeholder="Subject" onChange={
             (e)=>{
               updateStateSubjectName(e.target.value);
             }
           }/>
-          <input required className="text-slate-900 transition focus:outline focus:outline-2 focus:outline-yellow-500 p-[.5rem]    rounded-md" type="number" placeholder="Hours" onChange={
+          <input required  value={stateSubjectHours} className="text-slate-900 transition focus:outline focus:outline-2 focus:outline-yellow-500 p-[.5rem]    rounded-md" type="number" placeholder="Hours" onChange={
             (e)=>{
               updateStateSubjectHours(Number(e.target.value));
             }
