@@ -24,3 +24,34 @@ body{
 .smallCaps{
   font-variant: small-caps;
 }
+
+@media screen and (max-width: 873px){
+  div#wrapperEducationPlannerWebApp{
+    width: 95%;
+  }
+}
+
+
+@media screen and (max-width: 664px){
+  div#wrapperEducationPlannerWebApp>header>h1{
+    font-size:2.3rem;
+  }
+  div.outputLine{
+    flex-direction: column;
+  }
+  div.outputLine h2{
+    font-size:1.5rem;
+  }
+}
+
+@media screen and (max-width: 513px){
+  div#wrapperEducationPlannerWebApp>header>h1{
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 320px){
+  div#wrapperEducationPlannerWebApp{
+    min-width: 300px;
+  }
+}
