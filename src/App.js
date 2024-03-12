@@ -1,10 +1,11 @@
 import './App.css';
 import './Assests/fontAwesomeProIcons/fontAwesomeIcons.css';
+import EducationPlanner from './Components/EducationPlanner';
 
 function App() {
   return (
     <div>
-      Our React App, is up and running!
+      <EducationPlanner/>
     </div>
 
   );

@@ -17,4 +17,10 @@ html{
   font-family: "Roboto", sans-serif;
 }
 
+body{
+  background-color: #343d3f;
+}
 
+.smallCaps{
+  font-variant: small-caps;
+}
